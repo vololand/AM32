@@ -1,6 +1,7 @@
 
 
 #ifndef USE_MAKE
+// #define NARINEESC_L431
 // #define F031_DEV
 // #define FD6288_F051
 // #define IFLIGHT
@@ -43,6 +44,16 @@
 // #define USE_ADC_INPUT
 // #define USE_ALKAS_DEBUG_LED
 
+#ifdef NARINEESC_L431
+#define FIRMWARE_NAME "NarinESC_L4x"
+#define FILE_NAME "NarinESC_L431"
+#define DEAD_TIME 45
+#define HARDWARE_GROUP_L4_V
+#define TARGET_VOLTAGE_DIVIDER 94
+#define MILLIVOLT_PER_AMP 100
+#define USE_SERIAL_TELEMETRY
+#define EEPROM_START_ADD (uint32_t)0x0800F800
+#endif
 
 #ifdef LUMENIER_12S_F421
 #define FIRMWARE_NAME "Lumenier 12s"
@@ -4165,6 +4176,48 @@
 
 #define CURRENT_ADC_CHANNEL         LL_ADC_CHANNEL_8
 #define VOLTAGE_ADC_CHANNEL         LL_ADC_CHANNEL_11
+
+#endif
+
+#ifdef     HARDWARE_GROUP_L4_V
+
+#define MCU_L431
+#define USE_TIMER_15_CHANNEL_1
+#define INPUT_PIN                   LL_GPIO_PIN_2
+#define INPUT_PIN_PORT              GPIOA
+
+#define IC_TIMER_CHANNEL            LL_TIM_CHANNEL_CH1
+#define IC_TIMER_REGISTER           TIM15
+#define IC_TIMER_POINTER            htim15
+
+#define INPUT_DMA_CHANNEL           LL_DMA_CHANNEL_5
+#define DMA_HANDLE_TYPE_DEF         hdma_tim15_ch1
+#define IC_DMA_IRQ_NAME             DMA1_Channel5_IRQn
+
+#define PHASE_A_GPIO_LOW          	LL_GPIO_PIN_7              // PIN_1 -> PIN_7
+#define PHASE_A_GPIO_PORT_LOW       GPIOA                      // GPIOB -> GPIOA
+#define PHASE_A_GPIO_HIGH           LL_GPIO_PIN_8              // PIN_10 -> PIN_8
+#define PHASE_A_GPIO_PORT_HIGH      GPIOA
+
+#define PHASE_B_GPIO_LOW            LL_GPIO_PIN_0
+#define PHASE_B_GPIO_PORT_LOW       GPIOB
+#define PHASE_B_GPIO_HIGH           LL_GPIO_PIN_9
+#define PHASE_B_GPIO_PORT_HIGH      GPIOA
+
+#define PHASE_C_GPIO_LOW            LL_GPIO_PIN_1              // PIN_7 -> PIN_1
+#define PHASE_C_GPIO_PORT_LOW       GPIOB                      // GPIOA -> GPIOB
+#define PHASE_C_GPIO_HIGH           LL_GPIO_PIN_10             // PIN_8 -> PIN_10
+#define PHASE_C_GPIO_PORT_HIGH      GPIOA
+
+#define USE_COMP_2
+#define PHASE_A_COMP                LL_COMP_INPUT_MINUS_IO4    // pb7 -> pa4
+#define PHASE_B_COMP                LL_COMP_INPUT_MINUS_IO2    // pa5 -> pb7
+#define PHASE_C_COMP                LL_COMP_INPUT_MINUS_IO5    // pa4 -> pa5
+#define COMMON_COMP                 LL_COMP_INPUT_PLUS_IO1
+
+#define CURRENT_ADC_CHANNEL         LL_ADC_CHANNEL_8
+#define VOLTAGE_ADC_CHANNEL         LL_ADC_CHANNEL_11
+#define ADC_CHANNEL_TEMP            LL_ADC_CHANNEL_6
 
 #endif
 
