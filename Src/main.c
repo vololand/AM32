@@ -1673,7 +1673,8 @@ int main(void)
         eepromBuffer.version.major = VERSION_MAJOR;
         eepromBuffer.version.minor = VERSION_MINOR;
         eepromBuffer.eeprom_version = EEPROM_VERSION;
-			
+
+#ifdef NARINESC_L431
 				////////////////////////////
 				//NarinESC Default Setting//
 				////////////////////////////
@@ -1700,7 +1701,7 @@ int main(void)
 				eepromBuffer.sine_mode_changeover_thottle_level = (uint8_t)5; //Sine Startup Range : 5
 				eepromBuffer.sine_mode_power = (uint8_t)1;                    //Sine Mode Power : 1
 				eepromBuffer.driving_brake_strength = (uint8_t)10;            //Running Brake Level : 10
-        
+#endif
 				saveEEpromSettings();
     }
 		
