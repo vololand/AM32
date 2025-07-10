@@ -4236,25 +4236,25 @@
 #define DMA_HANDLE_TYPE_DEF         hdma_tim15_ch1
 #define IC_DMA_IRQ_NAME             DMA1_Channel5_IRQn
 
-#define PHASE_A_GPIO_LOW          	LL_GPIO_PIN_7              // PIN_1 -> PIN_7
+#define PHASE_A_GPIO_LOW          	LL_GPIO_PIN_7              // PIN_1 -> PIN_7(A->C)
 #define PHASE_A_GPIO_PORT_LOW       GPIOA                      // GPIOB -> GPIOA
-#define PHASE_A_GPIO_HIGH           LL_GPIO_PIN_8              // PIN_10 -> PIN_8
-#define PHASE_A_GPIO_PORT_HIGH      GPIOA
+#define PHASE_A_GPIO_HIGH           LL_GPIO_PIN_8              // PIN_10 -> PIN_8(A->C)
+#define PHASE_A_GPIO_PORT_HIGH      GPIOA                      // GPIOB -> GPIOA
 
-#define PHASE_B_GPIO_LOW            LL_GPIO_PIN_0
-#define PHASE_B_GPIO_PORT_LOW       GPIOB
-#define PHASE_B_GPIO_HIGH           LL_GPIO_PIN_9
-#define PHASE_B_GPIO_PORT_HIGH      GPIOA
+#define PHASE_B_GPIO_LOW            LL_GPIO_PIN_0              // SAME
+#define PHASE_B_GPIO_PORT_LOW       GPIOB                      // SAME
+#define PHASE_B_GPIO_HIGH           LL_GPIO_PIN_9              // SAME
+#define PHASE_B_GPIO_PORT_HIGH      GPIOA                      // SAME
 
-#define PHASE_C_GPIO_LOW            LL_GPIO_PIN_1              // PIN_7 -> PIN_1
+#define PHASE_C_GPIO_LOW            LL_GPIO_PIN_1              // PIN_7 -> PIN_1(C->A)
 #define PHASE_C_GPIO_PORT_LOW       GPIOB                      // GPIOA -> GPIOB
-#define PHASE_C_GPIO_HIGH           LL_GPIO_PIN_10             // PIN_8 -> PIN_10
-#define PHASE_C_GPIO_PORT_HIGH      GPIOA
+#define PHASE_C_GPIO_HIGH           LL_GPIO_PIN_10             // PIN_8 -> PIN_10(C->A)
+#define PHASE_C_GPIO_PORT_HIGH      GPIOA                      // SAME
 
 #define USE_COMP_2
-#define PHASE_A_COMP                LL_COMP_INPUT_MINUS_IO4    // pb7 -> pa4
-#define PHASE_B_COMP                LL_COMP_INPUT_MINUS_IO2    // pa5 -> pb7
-#define PHASE_C_COMP                LL_COMP_INPUT_MINUS_IO5    // pa4 -> pa5
+#define PHASE_A_COMP                LL_COMP_INPUT_MINUS_IO4    // pb7(I02) -> pa4(IO4) / (A->C)
+#define PHASE_B_COMP                LL_COMP_INPUT_MINUS_IO2    // pa5(I05) -> pb7(I02) / (B->A)
+#define PHASE_C_COMP                LL_COMP_INPUT_MINUS_IO5    // pa4(IO4) -> pa5(I05) / (C->B)
 #define COMMON_COMP                 LL_COMP_INPUT_PLUS_IO1
 
 #define CURRENT_ADC_CHANNEL         LL_ADC_CHANNEL_8
