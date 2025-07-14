@@ -1702,6 +1702,36 @@ int main(void)
 				eepromBuffer.sine_mode_power = (uint8_t)1;                    //Sine Mode Power : 1
 				eepromBuffer.driving_brake_strength = (uint8_t)10;            //Running Brake Level : 10
 #endif
+
+#ifdef NARINESC_F051
+				////////////////////////////
+				//NarinESC Default Setting//
+				////////////////////////////
+				// Multi ESC Config Tool UI LEFT Option
+				eepromBuffer.dir_reversed = (uint8_t)0;                       //Reverse Rotation : 0
+				eepromBuffer.comp_pwm = (uint8_t)1;                           //Complementary PWM : 1
+				eepromBuffer.variable_pwm = (uint8_t)1;                       //Variable PWM : 1
+				eepromBuffer.bi_direction = (uint8_t)0;                       //Bi-directional(fwd/rv) : 0
+				eepromBuffer.stuck_rotor_protection = (uint8_t)1;             //Stuck Rotor Protection : 1
+				eepromBuffer.brake_on_stop = (uint8_t)0;                      //Brake On Stop : 0
+				eepromBuffer.stall_protection = (uint8_t)0;                   //Stall Protection : 0
+				eepromBuffer.use_sine_start = (uint8_t)1;                     //Sinusoidal Startup : 1
+				eepromBuffer.telemetry_on_interval = (uint8_t)0;              //30 ms Telemetry : 0
+				eepromBuffer.use_hall_sensors = (uint8_t)0;                   //Use Hall Sensors : 0
+				eepromBuffer.auto_advance = (uint8_t)0;                       //Auto-Timing : 0
+				// Multi ESC Config Tool UI RIGHT Option
+				eepromBuffer.advance_level = (uint8_t)2; 											//Timing Advance : 15(value : 2)
+				eepromBuffer.motor_kv = (uint8_t)33;                          //Motor KV : 1340(value : 33)
+				eepromBuffer.motor_poles = (uint8_t)14;                       //Motor Poles : 14
+				eepromBuffer.startup_power = (uint8_t)100;                    //Startup Power : 100
+				eepromBuffer.pwm_frequency = (uint8_t)24;                     //PWM Frequency : 24
+				eepromBuffer.beep_volume = (uint8_t)5;                        //Beep Volume : 5
+				eepromBuffer.drag_brake_strength = (uint8_t)10;               //Stopped Brake Level : 10
+				eepromBuffer.sine_mode_changeover_thottle_level = (uint8_t)5; //Sine Startup Range : 5
+				eepromBuffer.sine_mode_power = (uint8_t)1;                    //Sine Mode Power : 1
+				eepromBuffer.driving_brake_strength = (uint8_t)10;            //Running Brake Level : 10
+#endif
+
 				saveEEpromSettings();
     }
 		
