@@ -1693,7 +1693,11 @@ int main(void)
 				eepromBuffer.auto_advance = (uint8_t)0;                       //Auto-Timing : 0
 				// Multi ESC Config Tool UI RIGHT Option
 				eepromBuffer.advance_level = (uint8_t)2; 											//Timing Advance : 15(value : 2)
-				eepromBuffer.motor_kv = (uint8_t)33;                          //Motor KV : 1340(value : 33)
+				//0(0)	1(60)	2(100)	3(140)	4(180)	5(220)	6(260)	7(300)	8(340)	9(380)
+				//10(420)	11(460)	12(500)	13(540)	14(580)	15(620)	16(660)	17(700)	18(740)	19(780)
+				//20(820)	21(860)	22(900)	23(940)	24(980)	25(1020)	26(1060)	27(1100)	28(1140)	29(1180)
+				//30(1220)	31(1260)	32(1300)	33(1340) ... 
+				eepromBuffer.motor_kv = (uint8_t)22;                          //Motor KV : 1340(value : 33)
 				eepromBuffer.motor_poles = (uint8_t)14;                       //Motor Poles : 14
 				eepromBuffer.startup_power = (uint8_t)100;                    //Startup Power : 100
 				eepromBuffer.pwm_frequency = (uint8_t)24;                     //PWM Frequency : 24
