@@ -1673,7 +1673,8 @@ int main(void)
         eepromBuffer.version.major = VERSION_MAJOR;
         eepromBuffer.version.minor = VERSION_MINOR;
         eepromBuffer.eeprom_version = EEPROM_VERSION;
-
+			
+//class-3(70A)
 #ifdef NARINESC_L431
 				////////////////////////////
 				//NarinESC Default Setting//
@@ -1703,6 +1704,7 @@ int main(void)
 				eepromBuffer.driving_brake_strength = (uint8_t)10;            //Running Brake Level : 10
 #endif
 
+//class-4(40A)
 #ifdef NARINESC_F051
 				////////////////////////////
 				//NarinESC Default Setting//

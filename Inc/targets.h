@@ -2832,9 +2832,9 @@
 #define PHASE_C_GPIO_HIGH LL_GPIO_PIN_10    // PIN_8 -> PIN_10(C->A)
 #define PHASE_C_GPIO_PORT_HIGH GPIOA        // SAME
 
-#define PHASE_A_COMP COMP_PA5								// pa5 -> pa4
+#define PHASE_A_COMP COMP_PA5								// SAME
 #define PHASE_B_COMP COMP_PA0								// SAME
-#define PHASE_C_COMP COMP_PA4								// pa4 -> pa5
+#define PHASE_C_COMP COMP_PA4								// SAME
 
 #endif
 
