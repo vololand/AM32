@@ -7,16 +7,16 @@
 
   <Targets>
     <Target>
-      <TargetName>AM32REF_F051</TargetName>
+      <TargetName>AM32REF_F051_NarinESC(40A)</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>6190000::V6.19::ARMCLANG</pCCUsed>
+      <pCCUsed>6230000::V6.23::ARMCLANG</pCCUsed>
       <uAC6>1</uAC6>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -49,7 +49,7 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>.\Objects\</OutputDirectory>
-          <OutputName>AM32REF_F051</OutputName>
+          <OutputName>AM32REF_F051_NarinESC(40A)</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>
@@ -338,7 +338,7 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>STM32F051x8,USE_FULL_LL_DRIVER, AM32REF_F051</Define>
+              <Define>STM32F051x8,USE_FULL_LL_DRIVER, AM32REF_F051_NarinESC</Define>
               <Undefine></Undefine>
               <IncludePath>..\mcu\f051\Drivers\CMSIS\Include;..\mcu\f051\Drivers\CMSIS\Device\ST\STM32F0xx\Include;..\mcu\f051\Drivers\STM32F0xx_HAL_Driver\Inc;..\mcu\f051\Inc;..\inc</IncludePath>
             </VariousControls>
@@ -609,7 +609,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -1271,7 +1271,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -1933,7 +1933,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -2595,7 +2595,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -3257,7 +3257,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -3919,7 +3919,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -4581,7 +4581,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -5243,7 +5243,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -5905,7 +5905,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -6567,7 +6567,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -7229,7 +7229,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -7891,7 +7891,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -8553,7 +8553,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -9215,7 +9215,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -9877,7 +9877,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -10539,7 +10539,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -11201,7 +11201,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -11863,7 +11863,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -12525,7 +12525,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -13187,7 +13187,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -13849,7 +13849,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -14511,7 +14511,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -15173,7 +15173,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -15835,7 +15835,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -16497,7 +16497,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -17090,7 +17090,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -17752,7 +17752,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -18345,7 +18345,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -18938,7 +18938,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -19531,7 +19531,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -20193,7 +20193,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -20855,7 +20855,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -22179,7 +22179,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -22841,7 +22841,7 @@
         <TargetCommonOption>
           <Device>STM32F051K6Ux</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F0xx_DFP.2.1.1</PackID>
+          <PackID>Keil.STM32F0xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00008000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -23432,7 +23432,7 @@
       <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="5.5.0" condition="ARMv6_7_8-M Device">
         <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.8.0"/>
         <targetInfos>
-          <targetInfo name="AM32REF_F051"/>
+          <targetInfo name="AM32REF_F051_NarinESC(40A)"/>
           <targetInfo name="DM_VISHNU32"/>
           <targetInfo name="PB054_F051"/>
           <targetInfo name="PB405_F051"/>
