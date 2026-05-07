@@ -1715,6 +1715,91 @@ int main(void)
         eepromBuffer.version.major = VERSION_MAJOR;
         eepromBuffer.version.minor = VERSION_MINOR;
         eepromBuffer.eeprom_version = EEPROM_VERSION;
+			
+//class-3(70A)
+#ifdef VIMDRONES_L431_NarinESC
+				////////////////////////////
+				//NarinESC Default Setting//
+				////////////////////////////
+				// Multi ESC Config Tool UI LEFT Option
+				//eepromBuffer.dir_reversed = (uint8_t)0;                       //Reverse Rotation : 0
+				eepromBuffer.comp_pwm = (uint8_t)0;                           //Complementary PWM : 0
+				eepromBuffer.variable_pwm = (uint8_t)1;                       //Variable PWM : 1
+				eepromBuffer.bi_direction = (uint8_t)0;                       //Bi-directional(fwd/rv) : 0
+				eepromBuffer.stuck_rotor_protection = (uint8_t)1;             //Stuck Rotor Protection : 1
+				eepromBuffer.brake_on_stop = (uint8_t)0;                      //Brake On Stop : 0
+				eepromBuffer.stall_protection = (uint8_t)0;                   //Stall Protection : 0
+				eepromBuffer.use_sine_start = (uint8_t)1;                     //Sinusoidal Startup : 1
+				eepromBuffer.telemetry_on_interval = (uint8_t)0;              //30 ms Telemetry : 0
+				eepromBuffer.use_hall_sensors = (uint8_t)0;                   //Use Hall Sensors : 0
+				eepromBuffer.auto_advance = (uint8_t)0;                       //Auto-Timing : 0
+				// Multi ESC Config Tool UI RIGHT Option
+				eepromBuffer.advance_level = (uint8_t)2; 											//Timing Advance : 15(value : 2)
+				//0(0)	1(60)	2(100)	3(140)	4(180)	5(220)	6(260)	7(300)	8(340)	9(380)
+				//10(420)	11(460)	12(500)	13(540)	14(580)	15(620)	16(660)	17(700)	18(740)	19(780)
+				//20(820)	21(860)	22(900)	23(940)	24(980)	25(1020)	26(1060)	27(1100)	28(1140)	29(1180)
+				//30(1220)	31(1260)	32(1300)	33(1340) ... 
+				eepromBuffer.motor_kv = (uint8_t)22;                          //Motor KV : 900(value : 22)
+				eepromBuffer.motor_poles = (uint8_t)14;                       //Motor Poles : 14
+				eepromBuffer.startup_power = (uint8_t)100;                    //Startup Power : 100
+				eepromBuffer.pwm_frequency = (uint8_t)24;                     //PWM Frequency : 24
+				eepromBuffer.beep_volume = (uint8_t)5;                        //Beep Volume : 5
+				eepromBuffer.drag_brake_strength = (uint8_t)10;               //Stopped Brake Level : 10
+				eepromBuffer.sine_mode_changeover_thottle_level = (uint8_t)5; //Sine Startup Range : 5
+				eepromBuffer.sine_mode_power = (uint8_t)1;                    //Sine Mode Power : 1
+				eepromBuffer.driving_brake_strength = (uint8_t)10;            //Running Brake Level : 10
+#endif
+
+//class-4(40A)
+#ifdef AM32REF_F051_NarinESC
+
+				////////////////////////////
+				//NarinESC Default Setting//
+				////////////////////////////
+				
+				// Motor
+				eepromBuffer.stuck_rotor_protection = (uint8_t)0; 		// 22 - Stuck rotor protection
+				eepromBuffer.stall_protection = 0;										// 29 - Stall protection
+				eepromBuffer.use_hall_sensors = 0;										// 39 - Use hall sensors
+				eepromBuffer.telemetry_on_interval = 0;								// 31 - 30ms interval telemetry
+				eepromBuffer.comp_pwm = 0;														// 20 - Complementary PWM
+				eepromBuffer.auto_advance = 0;												// 47 - Auto timing advance
+				eepromBuffer.variable_pwm = 1;												// 21 - PWM Type Variable
+
+				eepromBuffer.advance_level = 32; 											// 23 - Timing advance : 20.625° electrical (temp_advance 22) 
+				eepromBuffer.motor_poles = 14;												// 27 - Motor poles
+				eepromBuffer.startup_power = 100;											// 25 - Startup power
+				eepromBuffer.beep_volume = 5;													// 30 - Beeper volume
+				eepromBuffer.motor_kv = 33; 													// 26 - Motor KV : (33 * 40) + 20 = 1340
+				eepromBuffer.pwm_frequency = 24; 											// 24 - PWM Frequency : variable 16–32 kHz band (AM32 default scale) 
+				
+				//Extended settings
+				eepromBuffer.max_ramp = 160; 													// 5  - Ramp rate : 16.0 % duty per ms
+				eepromBuffer.minimum_duty_cycle = 2; 									// 6  - Minimum duty cycle : 2%
+				
+				//Limits
+				eepromBuffer.low_voltage_cut_off = 0;									// 36 - Low voltage cut off
+				eepromBuffer.limits.temperature = 255;								// 43 - Temperature limit : disabled
+				eepromBuffer.limits.current = 0; 											// 44 - Current limit : disabled
+				
+				//Sinusoidal Startup
+				eepromBuffer.use_sine_start = 1;											// 19 - Sinusoidal startup
+				eepromBuffer.sine_mode_changeover_thottle_level = 5;	// 40 - Sin Mode Range
+				eepromBuffer.sine_mode_power = 1;											// 45 - Sine Mode Power
+				
+				//Brake
+				eepromBuffer.rc_car_reverse = 0;											// 38 - Car type reverse braking
+				eepromBuffer.brake_on_stop = 0;												// 28 - Brake on stop
+				eepromBuffer.drag_brake_strength = 10;								// 41 - Running brake level
+				
+				//Servo settings
+				eepromBuffer.servo.low_threshold = 128; 							// 32 - Low threshold : (128*2)+750 = 1006
+				eepromBuffer.servo.high_threshold = 128; 							// 33 - High threshold : (128*2)+1750 = 2006
+				eepromBuffer.servo.neutral = 128; 										// 34 - Neutral : 128+1374 = 1502
+				eepromBuffer.servo.dead_band = 50;										// 35 - Dead band
+				
+#endif
+			
         saveEEpromSettings();
     }
     

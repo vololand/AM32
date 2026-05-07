@@ -97,6 +97,17 @@
 #define EEPROM_START_ADD (uint32_t)0x0800F800
 #endif
 
+#ifdef VIMDRONES_L431_NarinESC
+#define FIRMWARE_NAME "NarinESC_L4x"
+#define FILE_NAME "NarinESC_L431"
+#define DEAD_TIME 45
+#define HARDWARE_GROUP_L4_V
+#define TARGET_VOLTAGE_DIVIDER 94
+#define MILLIVOLT_PER_AMP 100
+#define USE_SERIAL_TELEMETRY
+#define EEPROM_START_ADD (uint32_t)0x0800F800
+#endif
+
 #ifdef VIMDRONES_L431_CAN
 #define FIRMWARE_NAME "VimdroneL431"
 #define FILE_NAME "VIMDRONES_L431_CAN"
@@ -4883,6 +4894,48 @@
 
 #define CURRENT_ADC_CHANNEL         LL_ADC_CHANNEL_8
 #define VOLTAGE_ADC_CHANNEL         LL_ADC_CHANNEL_11
+
+#endif
+
+#ifdef     HARDWARE_GROUP_L4_V
+
+#define MCU_L431
+#define USE_TIMER_15_CHANNEL_1
+#define INPUT_PIN                   LL_GPIO_PIN_2
+#define INPUT_PIN_PORT              GPIOA
+
+#define IC_TIMER_CHANNEL            LL_TIM_CHANNEL_CH1
+#define IC_TIMER_REGISTER           TIM15
+#define IC_TIMER_POINTER            htim15
+
+#define INPUT_DMA_CHANNEL           LL_DMA_CHANNEL_5
+#define DMA_HANDLE_TYPE_DEF         hdma_tim15_ch1
+#define IC_DMA_IRQ_NAME             DMA1_Channel5_IRQn
+
+#define PHASE_A_GPIO_LOW          	LL_GPIO_PIN_7              // PIN_1 -> PIN_7(A->C)
+#define PHASE_A_GPIO_PORT_LOW       GPIOA                      // GPIOB -> GPIOA
+#define PHASE_A_GPIO_HIGH           LL_GPIO_PIN_8              // PIN_10 -> PIN_8(A->C)
+#define PHASE_A_GPIO_PORT_HIGH      GPIOA                      // GPIOB -> GPIOA
+
+#define PHASE_B_GPIO_LOW            LL_GPIO_PIN_0              // SAME
+#define PHASE_B_GPIO_PORT_LOW       GPIOB                      // SAME
+#define PHASE_B_GPIO_HIGH           LL_GPIO_PIN_9              // SAME
+#define PHASE_B_GPIO_PORT_HIGH      GPIOA                      // SAME
+
+#define PHASE_C_GPIO_LOW            LL_GPIO_PIN_1              // PIN_7 -> PIN_1(C->A)
+#define PHASE_C_GPIO_PORT_LOW       GPIOB                      // GPIOA -> GPIOB
+#define PHASE_C_GPIO_HIGH           LL_GPIO_PIN_10             // PIN_8 -> PIN_10(C->A)
+#define PHASE_C_GPIO_PORT_HIGH      GPIOA                      // SAME
+
+#define USE_COMP_2
+#define PHASE_A_COMP                LL_COMP_INPUT_MINUS_IO4    // pb7(I02) -> pa4(IO4) / (A->C)
+#define PHASE_B_COMP                LL_COMP_INPUT_MINUS_IO2    // pa5(I05) -> pb7(I02) / (B->A)
+#define PHASE_C_COMP                LL_COMP_INPUT_MINUS_IO5    // pa4(IO4) -> pa5(I05) / (C->B)
+#define COMMON_COMP                 LL_COMP_INPUT_PLUS_IO1
+
+#define CURRENT_ADC_CHANNEL         LL_ADC_CHANNEL_8
+#define VOLTAGE_ADC_CHANNEL         LL_ADC_CHANNEL_11
+#define ADC_CHANNEL_TEMP            LL_ADC_CHANNEL_6
 
 #endif
 
