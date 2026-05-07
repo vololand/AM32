@@ -16,7 +16,7 @@
         <TargetCommonOption>
           <Device>STM32L431KBUx</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32L4xx_DFP.2.6.2</PackID>
+          <PackID>Keil.STM32L4xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000-0x2000BFFF) IRAM2(0x10000000-0x10003FFF) IROM(0x8000000-0x801FFFF) CLOCK(8000000) FPU2 CPUTYPE("Cortex-M4") TZ</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -616,7 +616,7 @@
         <TargetCommonOption>
           <Device>STM32L431KBUx</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32L4xx_DFP.2.6.2</PackID>
+          <PackID>Keil.STM32L4xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000-0x2000BFFF) IRAM2(0x10000000-0x10003FFF) IROM(0x8000000-0x801FFFF) CLOCK(8000000) FPU2 CPUTYPE("Cortex-M4") TZ</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -1216,7 +1216,7 @@
         <TargetCommonOption>
           <Device>STM32L431KBUx</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32L4xx_DFP.2.6.2</PackID>
+          <PackID>Keil.STM32L4xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000-0x2000BFFF) IRAM2(0x10000000-0x10003FFF) IROM(0x8000000-0x801FFFF) CLOCK(8000000) FPU2 CPUTYPE("Cortex-M4") TZ</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -1807,16 +1807,16 @@
       </Groups>
     </Target>
     <Target>
-      <TargetName>NEUTRON_SINGLE_L431</TargetName>
+      <TargetName>VIMDRONES_L431_NarinESC(70A)</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>6190000::V6.19::ARMCLANG</pCCUsed>
+      <pCCUsed>6230000::V6.23::ARMCLANG</pCCUsed>
       <uAC6>1</uAC6>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32L431KBUx</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32L4xx_DFP.2.6.2</PackID>
+          <PackID>Keil.STM32L4xx_DFP.3.0.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000-0x2000BFFF) IRAM2(0x10000000-0x10003FFF) IROM(0x8000000-0x801FFFF) CLOCK(8000000) FPU2 CPUTYPE("Cortex-M4") TZ</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -1849,7 +1849,7 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>.\Objects\</OutputDirectory>
-          <OutputName>AM32_NEUTRON_SINGLE_L431</OutputName>
+          <OutputName>AM32_L431_NarinESC(70A)</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>
@@ -2138,7 +2138,7 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>NEUTRON_SINGLE_L431,USE_FULL_LL_DRIVER,HSE_VALUE=8000000,HSE_STARTUP_TIMEOUT=100,LSE_STARTUP_TIMEOUT=5000,LSE_VALUE=32768,MSI_VALUE=4000000,EXTERNALSAI1_CLOCK_VALUE=2097000,HSI_VALUE=16000000,LSI_VALUE=32000,VDD_VALUE=3300,PREFETCH_ENABLE=0,INSTRUCTION_CACHE_ENABLE=1,DATA_CACHE_ENABLE=1,STM32L431xx</Define>
+              <Define>VIMDRONES_L431_NarinESC,USE_FULL_LL_DRIVER,HSE_VALUE=8000000,HSE_STARTUP_TIMEOUT=100,LSE_STARTUP_TIMEOUT=5000,LSE_VALUE=32768,MSI_VALUE=4000000,EXTERNALSAI1_CLOCK_VALUE=2097000,HSI_VALUE=16000000,LSI_VALUE=32000,VDD_VALUE=3300,PREFETCH_ENABLE=0,INSTRUCTION_CACHE_ENABLE=1,DATA_CACHE_ENABLE=1,STM32L431xx</Define>
               <Undefine></Undefine>
               <IncludePath>..\Inc;..\Mcu\l431\Drivers\STM32L4xx_HAL_Driver\Inc;..\Mcu\l431\Drivers\CMSIS\Device\ST\STM32L4xx\Include;..\Mcu\l431\Drivers\CMSIS\Include;..\Mcu\l431\Drivers\CMSIS\Core\Include;..\Mcu\l431\Inc</IncludePath>
             </VariousControls>
@@ -2344,6 +2344,11 @@
               <FileType>1</FileType>
               <FilePath>..\Src\sounds.c</FilePath>
             </File>
+            <File>
+              <FileName>kiss_telemetry.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\kiss_telemetry.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -2410,8 +2415,8 @@
         <package name="CMSIS" schemaVersion="1.7.7" url="http://www.keil.com/pack/" vendor="ARM" version="5.9.0"/>
         <targetInfos>
           <targetInfo name="NEUTRON_L431"/>
-          <targetInfo name="NEUTRON_SINGLE_L431"/>
           <targetInfo name="VIMDRONES_L431"/>
+          <targetInfo name="VIMDRONES_L431_NarinESC(70A)"/>
           <targetInfo name="l431test"/>
         </targetInfos>
       </component>
